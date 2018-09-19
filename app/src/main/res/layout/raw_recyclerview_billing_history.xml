@@ -1,0 +1,57 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/rawBillingHistoryList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+            android:id="@+id/tvBillingHistoryAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$29.99"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/notification_count_text"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/margin_left">
+
+            <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                android:id="@+id/tvBillingHistoryPlanType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Residential Plan"
+                android:textColor="@color/black"
+                android:textSize="@dimen/notification_count_text"/>
+
+            <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                android:id="@+id/tvBillingHistoryDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aug 01, 2016 10:12 AM"
+                android:textColor="@color/gray_text_color"
+                android:textSize="@dimen/raw_upcoming_discription_text_size"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/footerView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/include_horizontal_line"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

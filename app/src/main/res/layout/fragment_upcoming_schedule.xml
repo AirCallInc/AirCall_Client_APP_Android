@@ -1,0 +1,62 @@
+<LinearLayout
+    android:id="@+id/llMain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.aircall.app.Fragment.DashboardFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/header">
+
+        <ImageView
+            android:id="@+id/ivNavDrawer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:padding="@dimen/back_arrow_padding"
+            android:src="@drawable/menu_icon"/>
+
+        <com.aircall.app.TextFonts.TextViewOpenSansBoldFont
+            android:id="@+id/tvHeaderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/drawer_upcoming_schedual"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_header_text_size"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lvMonthServicesList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/white">
+        </ListView>
+
+        <com.aircall.app.TextFonts.TextViewOpenSansBoldFont
+            android:id="@+id/tvNoData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/text_light_blue_color"
+            android:textSize="@dimen/common_header_text_size"/>
+
+    </LinearLayout>
+
+</LinearLayout>

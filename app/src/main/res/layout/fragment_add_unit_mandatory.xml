@@ -1,0 +1,616 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.aircall.app.Fragment.DashboardFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/header">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="@dimen/back_arrow_padding"
+            android:src="@drawable/arrow" />
+
+        <com.aircall.app.TextFonts.TextViewOpenSansBoldFont
+            android:id="@+id/tvHeaderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/add_unit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_header_text_size" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                android:id="@+id/tvPlanComparison"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="2"
+                android:text="@string/plan_comparison"
+                android:textColor="@color/text_light_blue_color"
+                android:textSize="@dimen/header_text_size" />
+
+            <com.aircall.app.TextFonts.TextViewOpenSansSemiBoldFont
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2"
+                android:text="@string/choose_plan"
+                android:textColor="@color/text_light_blue_color"
+                android:textSize="@dimen/header_text_size" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvUnitType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+            <include
+                android:id="@+id/footerView"
+                layout="@layout/include_horizontal_line"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_left">
+
+                <com.aircall.app.TextFonts.TextViewOpenSansSemiBoldFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/visit_per_year"
+                    android:textColor="@color/text_light_blue_color"
+                    android:textSize="@dimen/header_text_size" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnVisitMinus"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/minus" />
+
+                    <EditText
+                        android:id="@+id/etVisitPerYear"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/edit_text_border_background"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:paddingBottom="5dp"
+                        android:singleLine="true"
+                        android:text="1"
+                        android:textColor="@color/edit_text_border_text"
+                        android:textColorHint="@color/devider_color" />
+
+                    <Button
+                        android:id="@+id/btnVisitPlus"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/plus_add" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingRight="@dimen/padding_right"
+                android:weightSum="5">
+
+                <com.aircall.app.TextFonts.TextViewOpenSansSemiBoldFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/price_per_month"
+                    android:textColor="@color/text_light_blue_color"
+                    android:textSize="@dimen/header_text_size" />
+
+                <com.aircall.app.TextFonts.TextViewOpenSansBoldFont
+                    android:id="@+id/pricePerMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/padding_right"
+                    android:text="$0"
+                    android:textColor="@color/edit_text_border_text"
+                    android:textSize="@dimen/menu_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingRight="@dimen/padding_right"
+                android:visibility="gone">
+
+                <com.aircall.app.TextFonts.TextViewOpenSansSemiBoldFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/manufacture_year"
+                    android:textColor="@color/text_light_blue_color"
+                    android:textSize="@dimen/header_text_size" />
+
+                <EditText
+                    android:id="@+id/etManufactureYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:background="@drawable/edit_text_border_background"
+                    android:focusableInTouchMode="false"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/edit_text_border_text" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/footerView"
+                layout="@layout/include_horizontal_line"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingRight="@dimen/padding_right">
+
+                <com.aircall.app.TextFonts.TextViewOpenSansSemiBoldFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/provide_name_for_the_unit"
+                    android:textColor="@color/text_light_blue_color"
+                    android:textSize="@dimen/header_text_size" />
+
+                <EditText
+                    android:id="@+id/etUnitName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:background="@drawable/edit_text_border_background"
+                    android:hint="i.e. 1st Flr, unit 230, AC1"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/edit_text_border_text"
+                    android:textColorHint="@color/devider_color" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/footerView"
+                layout="@layout/include_horizontal_line"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingRight="@dimen/padding_right"
+                android:visibility="gone">
+
+                <com.aircall.app.TextFonts.TextViewOpenSansSemiBoldFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/unit_ton"
+                    android:textColor="@color/text_light_blue_color"
+                    android:textSize="@dimen/header_text_size" />
+
+                <EditText
+                    android:id="@+id/etUnitTon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:background="@drawable/edit_text_border_background"
+                    android:hint="i.e. 5 TON"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/edit_text_border_text"
+                    android:textColorHint="@color/devider_color" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/footerView"
+                layout="@layout/include_horizontal_line"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_right"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_left">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <com.aircall.app.TextFonts.TextViewOpenSansSemiBoldFont
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="@string/address_where_unit_is_located"
+                        android:textColor="@color/text_light_blue_color"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/addAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/plus_icon_blue" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvAddressList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                <com.aircall.app.TextFonts.TextViewOpenSansSemiBoldFont
+                    android:id="@+id/tvNoAddressMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/devider_color"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+            <include
+                android:id="@+id/footerView"
+                layout="@layout/include_horizontal_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_top">
+
+                <com.aircall.app.TextFonts.TextViewOpenSansSemiBoldFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/quantity_of_unit"
+                    android:textColor="@color/text_light_blue_color"
+                    android:textSize="@dimen/header_text_size" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnMinus"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/minus" />
+
+                    <EditText
+                        android:id="@+id/etQuantityunit"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/edit_text_border_background"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:paddingBottom="5dp"
+                        android:singleLine="true"
+                        android:text="1"
+                        android:textColor="@color/edit_text_border_text"
+                        android:textColorHint="@color/devider_color" />
+
+                    <Button
+                        android:id="@+id/btnPlus"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/plus_add" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/llOptionalInfo"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="15dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:paddingRight="10dp"-->
+                <!--android:visibility="gone">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/ivCheckForOptionalInfo"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@drawable/checkbox" />-->
+
+                <!--<com.aircall.www.TextFonts.TextViewOpenSansRagularFont-->
+                    <!--android:id="@+id/tvOptionalInfo"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:paddingLeft="20dp"-->
+                    <!--android:text="Provide optional Information"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="18sp" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@color/plan_detail_background"-->
+                <!--android:orientation="vertical"-->
+                <!--android:paddingBottom="30dp">-->
+
+                <!--<com.aircall.www.TextFonts.TextViewOpenSansSemiBoldFont-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_weight="2"-->
+                    <!--android:paddingLeft="@dimen/padding_left"-->
+                    <!--android:text="@string/plan_cost"-->
+                    <!--android:textColor="@color/text_light_blue_color"-->
+                    <!--android:textSize="@dimen/header_text_size" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:paddingLeft="@dimen/padding_left"-->
+                    <!--android:paddingRight="@dimen/padding_right"-->
+                    <!--android:weightSum="5">-->
+
+                    <!--<com.aircall.www.TextFonts.TextViewOpenSansRagularFont-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="2"-->
+                        <!--android:text="@string/per_month"-->
+                        <!--android:textColor="@color/edit_text_border_text"-->
+                        <!--android:textSize="@dimen/menu_text_size" />-->
+
+                    <!--<com.aircall.www.TextFonts.TextViewOpenSansBoldFont-->
+                        <!--android:id="@+id/tvPerMonth"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="3"-->
+                        <!--android:gravity="right"-->
+                        <!--android:paddingRight="@dimen/padding_right"-->
+                        <!--android:text="$0"-->
+                        <!--android:textColor="@color/edit_text_border_text"-->
+                        <!--android:textSize="@dimen/menu_text_size" />-->
+                <!--</LinearLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:paddingLeft="@dimen/padding_left"-->
+                    <!--android:paddingRight="@dimen/padding_right"-->
+                    <!--android:weightSum="5">-->
+
+                    <!--<com.aircall.www.TextFonts.TextViewOpenSansRagularFont-->
+                        <!--android:id="@+id/tvDurationInMonth"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_gravity="right"-->
+                        <!--android:text="For 0 Month"-->
+                        <!--android:textColor="@color/edit_text_border_text"-->
+                        <!--android:textSize="@dimen/menu_text_size" />-->
+                <!--</RelativeLayout>-->
+
+                <!--&lt;!&ndash;<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:paddingLeft="@dimen/padding_left"-->
+                    <!--android:paddingRight="@dimen/padding_right"-->
+                    <!--android:weightSum="5">-->
+                    <!--<com.aircall.www.TextFonts.TextViewOpenSansRagularFont-->
+                        <!--android:id="@+id/tvDurationInMonth"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:gravity="right"-->
+                        <!--android:layout_gravity="right"-->
+                        <!--android:text="For 0 Month"-->
+                        <!--android:textColor="@color/edit_text_border_text"-->
+                        <!--android:textSize="@dimen/menu_text_size"/>-->
+                    <!--<com.aircall.www.TextFonts.TextViewOpenSansBoldFont-->
+                        <!--android:id="@+id/tvPer36Month"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="3"-->
+                        <!--android:gravity="right"-->
+                        <!--android:paddingRight="@dimen/padding_right"-->
+                        <!--android:visibility="gone"-->
+                        <!--android:text="$0"-->
+                        <!--android:textColor="@color/edit_text_border_text"-->
+                        <!--android:textSize="@dimen/menu_text_size"/>-->
+                <!--</LinearLayout>&ndash;&gt;-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/llSelectPlans"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:orientation="vertical"-->
+                <!--android:paddingLeft="@dimen/padding_left"-->
+                <!--android:paddingRight="@dimen/padding_right"-->
+                <!--android:visibility="gone">-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/llAutoRenew"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/ivCheckForAutoRenewalPlan"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:src="@drawable/checkbox" />-->
+
+                    <!--<com.aircall.www.TextFonts.TextViewOpenSansRagularFont-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:paddingLeft="20dp"-->
+                        <!--android:text="Auto Renewal Plan"-->
+                        <!--android:textColor="@color/edit_text_border_text"-->
+                        <!--android:textSize="18sp" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/llSpecialOffer"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/ivCheckForSpecialOffer"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:src="@drawable/checkbox" />-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<com.aircall.www.TextFonts.TextViewOpenSansRagularFont-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:paddingLeft="20dp"-->
+                            <!--android:text="Special Offer"-->
+                            <!--android:textColor="@color/edit_text_border_text"-->
+                            <!--android:textSize="18sp" />-->
+
+                        <!--<com.aircall.www.TextFonts.TextViewOpenSansBoldFont-->
+                            <!--android:id="@+id/tvSpecialOffer"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:paddingLeft="20dp"-->
+                            <!--android:text=""-->
+                            <!--android:textColor="@color/black"-->
+                            <!--android:textSize="18sp"-->
+                            <!--android:textStyle="bold" />-->
+                    <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+            <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                android:id="@+id/tvSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_marginTop="40dp"
+                android:background="@color/text_light_blue_color"
+                android:gravity="center"
+                android:inputType="textCapSentences"
+                android:padding="10dp"
+                android:text="Proceed to summary"
+                android:textColor="@color/white"
+                android:textSize="@dimen/header_text_size" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

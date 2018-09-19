@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/llIncludeFilterQuantity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp" >
+
+    <EditText
+        android:id="@+id/etFilterSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_border_background"
+        android:padding="10dp"
+        android:hint="Filter Size 1"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="20dp"
+        android:focusable="false"
+        android:drawableRight="@drawable/search"/>
+
+    <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+        android:id="@+id/tvFilterLocationHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter Location 1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/header_text_size"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp">
+        <com.aircall.app.TextFonts.TextViewOpenSansLightFont
+            android:id="@+id/tvInsideEquipment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Inside Equipment"
+            android:textColor="@color/white"
+            android:textSize="@dimen/menu_text_size"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/button"/>
+        <com.aircall.app.TextFonts.TextViewOpenSansLightFont
+            android:id="@+id/tvInsideSpace"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Inside Space"
+            android:textColor="@color/black"
+            android:textSize="@dimen/menu_text_size"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:background="@color/tab_normal_background"
+            android:gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</LinearLayout>

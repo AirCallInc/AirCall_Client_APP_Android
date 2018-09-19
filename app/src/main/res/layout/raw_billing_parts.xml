@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/llAddress"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/upcoming_raw_header_back"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+            android:id="@+id/tvFilterName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="Filter"
+            android:textColor="@color/caldroid_holo_blue_dark"
+            android:textSize="@dimen/signin_text"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                android:id="@+id/tvQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="Qty : 1"
+                android:textColor="@color/gray_text_color"
+                android:textSize="@dimen/signin_text"/>
+
+            <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                android:id="@+id/tvAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:layout_alignParentRight="true"
+                android:text="$ 89.10"
+                android:textColor="@color/gray_text_color"
+                android:textSize="@dimen/signin_text"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/footerView"
+        layout="@layout/include_horizontal_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

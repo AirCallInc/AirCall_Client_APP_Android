@@ -1,0 +1,306 @@
+<resources>
+    <string name="app_name">AirCall</string>
+
+    <!--Dashboard Screen Fragment-->
+    <string name="Heading_dashboard">Dashboard</string>
+    <string name="side_menu_account_setting">Account settings</string>
+    <string name="add_unit">Add Unit</string>
+    <string name="your_unit">Your Units</string>
+    <string name="all_unit"><u>See All</u></string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="drawer_dashboard">Dashboard</string>
+    <string name="drawer_upcoming_schedual">Upcoming Schedule</string>
+    <string name="drawer_unsubmitted_units">UnSubmitted Units</string>
+    <string name="drawer_past_services">Service History</string>
+    <string name="drawer_my_units">My Units</string>
+    <string name="drawer_request_service">Request For Service</string>
+    <string name="drawer_plan_coverage">Plan Options</string>
+    <string name="drawer_terms">Terms &amp; Conditions</string>
+    <string name="drawer_about_us">About Us</string>
+    <string name="drawer_contact_us">Contact Us</string>
+    <string name="drawer_logout">Logout</string>
+    <string name="drawer_version">Version 1.01</string>
+    <string name="thanks_msg">Thank You !! for registering with AirCall</string>
+    <string name="your_notifications">Your Notifications</string>
+
+    <!--Login-Signup screens-->
+    <string name="name_hint">Name</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="company_name_hint">Company (Optional)</string>
+    <string name="phone_hint">Phone</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="re_type_password_hint">Re-type Password</string>
+    <string name="partner_code_hint">Partner Code (Optional)</string>
+    <string name="HVAC_more_then_ten">My HVAC Unit is more than 10 years old</string>
+    <string name="HVAC_less_then_ten">My HVAC Unit is less than 10 years old</string>
+    <string name="HVAC_donot_know">I don\'t know how old my HVAC Unit is</string>
+    <string name="Sign_in_text">Sign in</string>
+    <string name="Sign_up_text">Sign up</string>
+    <string name="Forgot_password_text">Forgot Password?</string>
+    <string name="Not_regestered_text">Register for new account</string>
+    <string name="save_password">Save Password</string>
+    <string name="heading_forgot_password">Please enter email associated with your account and we will email you access</string>
+    <string name="register_for_newaccount">Register for new account</string>
+
+
+    <!--Upcoming visit schedual-->
+    <string name="Header_upcoming_visit">Your next scheduled visits</string>
+
+    <!--Upcoming Unit Name-->
+    <string name="update_name">Update Name</string>
+
+    <!--Request for services screen-->
+    <string name="Request_for_service_title">Request for services</string>
+    <string name="address_text">Address</string>
+    <string name="select_unit">Select Unit</string>
+    <string name="select_time">Select Time</string>
+    <string name="add_note_hint">Add Note</string>
+    <string name="submit_request">Submit Request</string>
+
+    <!--Add unit-->
+    <string name="choose_plan">Choose Plan</string>
+    <string name="visit_per_year">Visit Per Year</string>
+    <string name="price_per_month">Price Per Month</string>
+    <string name="manufacture_year">Manufacture Date</string>
+    <string name="provide_name_for_the_unit">Provide name for the unit</string>
+    <string name="unit_ton">Unit Size</string>
+    <string name="address_where_unit_is_located">Address where unit is located</string>
+    <string name="plan_details">Plan details</string>
+    <string name="plan_cost">Plan Cost</string>
+    <string name="quantity_of_unit">Quantity Of Units</string>
+    <string name="per_month">Per Month</string>
+    <string name="for_36_month">For 36 Month</string>
+    <string name="cooling_title">For Cooling</string>
+    <string name="heating_title">For Heating</string>
+    <string name="submit">Submit</string>
+
+
+    <!--Choose Type-->
+    <string name="residential">Residential</string>
+    <string name="commercial">Commercial</string>
+    <string name="industrial">Industrial</string>
+    <string name="multiFamily">Multi-family</string>
+
+    <!--Billing Details-->
+    <string name="billing_details_title">Billing Details</string>
+    <string name="billing_details_order">Order #</string>
+    <string name="billing_details_transaction_id">Transaction Id</string>
+    <string name="billing_details_invoice">Invoice #</string>
+    <string name="billing_details_date">Date</string>
+    <string name="billing_details_time">Time</string>
+    <string name="billing_details_unit_service">Unit Serviced</string>
+    <string name="billing_details_amount">Amount</string>
+    <string name="billing_payment_type">Payment Type</string>
+    <string name="billing_check_number">Check Number</string>
+
+    <!--Plan-->
+    <string name="residential_plan">Residential Plan</string>
+    <string name="industrial_plan">Industrial Plan</string>
+    <string name="plan_comparison"> Plan Comparison</string>
+
+    <!--Billing History-->
+    <string name="billing_history_title">Billing History</string>
+    <string name="billing_history_amount">$19.99</string>
+
+    <!--My Cart-->
+    <string name="my_cart_title">My Cart</string>
+    <string name="my_cart_billing_address">Billing Address</string>
+    <string name="my_cart_first_name">First Name</string>
+    <string name="my_cart_last_name">Last Name</string>
+    <string name="my_cart_address">Address</string>
+    <string name="my_cart_city">City</string>
+    <string name="my_cart_state">State</string>
+    <string name="my_cart_zipcode">Zip Code</string>
+    <string name="my_cart_phone">Phone</string>
+    <string name="my_cart_mobile">Mobile</string>
+    <string name="my_cart_processed_to_make_payment">Proceed to make payment</string>
+
+
+    <!--Billing Address-->
+    <string name="billing_address_title">Billing Address</string>
+    <string name="billing_address_first_name">First Name</string>
+    <string name="billing_address_last_name">Last Name</string>
+    <string name="billing_address_company_name">Company (Optional)</string>
+    <string name="billing_address_address">Address</string>
+    <string name="billing_address_state">State</string>
+    <string name="billing_address_city">City</string>
+    <string name="billing_address_zipcode">Zip Code</string>
+    <string name="billing_address_payment">Proceed to make a payment</string>
+
+    <!--Payment Method-->
+    <string name="payment_method_title">Payment Method</string>
+    <string name="payment_method_total_amount">Monthly Payment</string>
+    <string name="payment_method_name_on_card">Name on card</string>
+    <string name="payment_method_card_no">Card Number</string>
+    <string name="payment_method_expire_year">Expiry Year</string>
+    <string name="payment_method_expire_month">Expiry Month</string>
+    <string name="payment_method_cvv">CVV</string>
+    <string name="goto_dashboard">Go To Dashboard</string>
+    <!--<string name="payment_method_term">Agree to terms &amp; conditions</string>-->
+    <string name="payment_method_term">Agree to Sales Agreement</string>
+
+    <!--Notifications-->
+    <string name="notifications_title">Notifications</string>
+
+    <!--Request For Cancel-->
+    <string name="request_for_cancel_title">Request For Cancel</string>
+    <string name="request_for_cancel_preferred_day">Preferred Date</string>
+    <string name="request_for_cancel_preferred_time">Preferred Time</string>
+    <string name="request_for_cancel_reason">Reason For Cancellation</string>
+
+    <!--Schedualed Details-->
+    <string name="schedule_detail_title">Schedule Detail</string>
+    <string name="schedule_detail_service_case_no">Service Case #</string>
+    <string name="schedule_detail_date">Date</string>
+    <string name="schedule_detail_time">Time</string>
+    <string name="schedule_detail_unit_will_be_serviced">Unit will be serviced</string>
+    <string name="schedule_detail_complaint">Complaint</string>
+    <string name="schedule_detail_accept">Accept</string>
+    <string name="schedule_detail_cancel">Cancel</string>
+
+
+    <!--No Show Details-->
+    <string name="no_show_detail_title">No Show Details</string>
+    <string name="no_show_detail_details">Details</string>
+    <string name="no_show_detail_pay_for_it_now">Pay for it now</string>
+
+
+    <!--Summary-->
+    <string name="summary_title">Summary</string>
+    <string name="summary_detail">Detail</string>
+    <string name="summary_remove">Remove</string>
+    <string name="summary_total_amount">Total Amount</string>
+    <string name="summary_add_another_unit">Add another unit</string>
+    <string name="summary_checkout">Checkout</string>
+
+
+    <!--Receipt-->
+    <string name="receipt_title">Receipt</string>
+    <string name="receipt_total_untis">Total Units</string>
+    <string name="receipt_total_amount">Total Amount</string>
+
+    <!--Select State Dialog-->
+    <string name="select_state_title">Select State</string>
+
+    <!--Select City Dialog-->
+    <string name="select_city_title">Select City</string>
+
+    <!--Select Address Dialog-->
+    <string name="select_address_title">Select Address</string>
+
+    <!--Select State part-->
+    <string name="select_state_part">Select Part</string>
+
+    <!--Request for rescheduel-->
+    <string name="request_for_reschedule_title">Request For Reschedule</string>
+    <string name="reason_for_reschedule">Reason For Reschedule</string>
+
+    <!--User Profile-->
+    <string name="account_setting_title">Account Settings</string>
+
+    <!--Change Password-->
+    <string name="change_password_title">Change Password</string>
+    <string name="change_password_old_password">Old Password</string>
+    <string name="change_password_new_password">New Password</string>
+    <string name="change_password_retype_password">Re-Type Password</string>
+    <string name="change_password_reset">Reset</string>
+    <string name="change_password_cancel">Cancel</string>
+
+    <!--Change Contects-->
+    <string name="contact_numbers">Contact Numbers</string>
+    <string name="change_cell_phone">Cell Phone</string>
+    <string name="phone_number">Phone number</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="change_office">Office</string>
+    <string name="change_contact_home">Home</string>
+
+    <!--Update UserName-->
+    <string name="change_username_dialog_title">Your Name</string>
+    <string name="change_username_firstname">First Name</string>
+    <string name="change_username_lastname">Last Name</string>
+    <string name="change_username_done">Done</string>
+    <string name="change_username_cancel">Cancel</string>
+    <string name="change_companyname">Company Name</string>
+
+
+    <!--PlanCoverage-->
+    <string name="plan_coverage_title">Plan Coverage</string>
+
+    <!--List of Request-->
+    <string name="list_of_request_title">List Of Request</string>
+
+    <!--My Unit-->
+    <string name="my_unit_title">My Units</string>
+    <string name="my_unit_status">Status </string>
+    <string name="my_unit_plan">Plan </string>
+
+    <!--Past Service-->
+    <string name="past_service_title">Service History</string>
+    <string name="past_service_scn">Service Case # </string>
+    <string name="past_service_rate_msg">*Note : Once you will submit rate and review, you will not able to change it.</string>
+
+    <!--Add Address-->
+    <string name="add_address_title">Add Address</string>
+    <string name="add_address_address">Address</string>
+    <string name="add_address_state">State</string>
+    <string name="add_address_city">City</string>
+    <string name="add_address_zipcode">Zip Code</string>
+    <string name="set_as_default">Set default address</string>
+    <string name="add_address_submit">Add</string>
+
+    <!--Unit detail-->
+    <string name="unit_detail_title">Unit Details</string>
+    <string name="unit_detail_unit">Unit</string>
+    <string name="unit_detail_plan">Plan</string>
+    <string name="unit_detail_age">Unit Age</string>
+    <string name="unit_detail_last_services">Last service</string>
+    <string name="unit_detail_upcoming_services">Upcoming service</string>
+    <string name="unit_detail_Serviceman">Service Employee</string>
+    <string name="unit_detail_total_services">Total service</string>
+    <string name="unit_detail_remain_services">Remaining service</string>
+
+    <!--Add New Card-->
+    <string name="add_new_card_title">Add New Card</string>
+    <string name="add_new_submit">Submit</string>
+    <string name="scan_card">Scan Card</string>
+
+    <!--Service Detail-->
+    <string name="services_detail">Services Detail</string>
+
+    <!--Contact Us-->
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="message">Message</string>
+
+    <!--GCM-->
+    <!--<string name="clientId">845296497873</string>-->
+    <!--<string name="server_api_key">AIzaSyBSx03-cYiUrEMZpagurr-lpgdvJ2okxFs</string>-->
+
+    <string name="clientId">469384084002</string>
+    <string name="server_api_key">AIzaSyBbVlUVXDI1MOYYUqaikLH-zrdF_DRo604</string>
+
+    <!--Day of Month-->
+    <string-array name="expire_month_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+
+
+    <string name="agree">Agree</string>
+    <string name="donotagree">Do not agree</string>
+</resources>

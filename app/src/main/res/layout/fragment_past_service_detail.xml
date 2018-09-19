@@ -1,0 +1,620 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.aircall.app.Fragment.DashboardFragment">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/header_background"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <com.aircall.app.TextFonts.TextViewOpenSansSemiBoldFont
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/services_detail"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_header_text_size" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:padding="@dimen/back_arrow_padding"
+                android:src="@drawable/arrow" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Service Case #"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/menu_text_size" />
+
+
+                <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                    android:id="@+id/tvSCN"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/menu_text_size" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/devider_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Address"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/menu_text_size" />
+                <!--android:layout_weight="0.9"-->
+
+                <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                    android:id="@+id/tvAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/menu_text_size" />
+                <!--android:layout_weight="1.3"-->
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/devider_color" />
+
+            <LinearLayout
+                android:id="@+id/llUnitList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Unit"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/menu_text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/devider_color" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvUnits"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.aircall.www.TextFonts.TextViewOpenSansRagularFont
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="Plan : "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/menu_text_size"/>
+
+                <com.aircall.www.TextFonts.TextViewOpenSansRagularFont
+                    android:id="@+id/tvPlan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/menu_text_size"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/devider_color"/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="Date"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/menu_text_size" />
+
+
+                <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                    android:id="@+id/tvDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/menu_text_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/devider_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:padding="10dp"
+                    android:text="Service Employee"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/menu_text_size" />
+
+                <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                    android:id="@+id/tvServiceMan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/activity_vertical_margin" />
+
+                <ImageView
+                    android:id="@+id/ivServiceMan"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.3"
+                    android:src="@drawable/placeholder_img" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/devider_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="Purpose Of Visit"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/menu_text_size" />
+
+                <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                    android:id="@+id/tvPurposeOfVisit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/menu_text_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/devider_color"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/llWorkDoneData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:text="Assigned Total Time"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/menu_text_size" />
+
+
+                    <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                        android:id="@+id/tvAssignTotalTime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/menu_text_size" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/devider_color"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:text="Assigned Start Time"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/menu_text_size" />
+
+
+                    <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                        android:id="@+id/tvAssignStartTime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/menu_text_size" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/devider_color"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:text="Assigned End Time"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/menu_text_size" />
+
+
+                    <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                        android:id="@+id/tvAssignEndTime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/menu_text_size" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/devider_color" />
+
+                <LinearLayout
+                    android:id="@+id/llDifferentTimes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:text="Actual Start Time"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/menu_text_size" />
+
+                        <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                            android:id="@+id/tvWorkStartedTime"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.3"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/menu_text_size" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/devider_color" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:text="Actual End Time "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/menu_text_size" />
+
+                        <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                            android:id="@+id/tvComplateWorkingTime"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.3"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/menu_text_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llExtraTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/devider_color"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:text="Extra Time "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/menu_text_size" />
+
+                        <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                            android:id="@+id/tvExtraTime"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.3"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/menu_text_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/devider_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Work Performed"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/menu_text_size" />
+
+                <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                    android:id="@+id/tvWorkPerformed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/menu_text_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/devider_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Recommendation"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/menu_text_size" />
+
+                <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                    android:id="@+id/tvRecommendation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/menu_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llWorkDoneData1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/devider_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:text="Rate "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/menu_text_size" />
+
+                    <RatingBar
+                        android:id="@+id/rbRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:numStars="5" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvRateNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="@string/past_service_rate_msg"
+                    android:textColor="@color/notification_count_text"
+                    android:textSize="16dp" />
+                <!--<View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/devider_color"/>-->
+
+                <EditText
+                    android:id="@+id/etWriteReview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edit_text_black_border_background"
+                    android:gravity="top"
+                    android:hint="Add Review"
+                    android:inputType="textMultiLine"
+                    android:maxLines="4"
+                    android:minHeight="70dp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray_text_color" />
+
+                <!--<View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/devider_color"/>-->
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/text_light_blue_color"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="Submit Review"
+                android:textColor="@color/white"
+                android:textSize="@dimen/signin_text" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

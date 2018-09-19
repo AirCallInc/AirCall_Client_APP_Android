@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rlQuantityOne"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="60dp"
+        android:paddingRight="@dimen/padding_right"
+        android:paddingLeft="@dimen/padding_left"
+        android:background="@color/plan_detail_background">
+
+        <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="STATE"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"/>
+        <ImageView
+            android:id="@+id/ivCheckForSelectState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            android:src="@drawable/checkbox_selected"/>
+    </RelativeLayout>
+ </LinearLayout>

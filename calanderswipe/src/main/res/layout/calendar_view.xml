@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="?styleCaldroidViewLayout"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/calendar_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/calendar_left_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/left_arrow"/>
+
+        <TextView
+            android:id="@+id/calendar_month_year_textview"
+            style="?styleCaldroidMonthName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="hey"/>
+
+        <ImageView
+            android:id="@+id/calendar_right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/right_arrow"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/caldroid_black"/>
+
+    <GridView
+        android:id="@+id/weekday_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:numColumns="7"
+        android:stretchMode="columnWidth">
+    </GridView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/caldroid_black"/>
+
+    <com.calanderswipe.infiniteviewpager.InfiniteViewPager
+        android:id="@+id/months_infinite_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

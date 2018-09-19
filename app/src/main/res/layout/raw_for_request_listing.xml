@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llAddress"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/address_title_back_color"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+            android:id="@+id/tvAddressTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="400 Beach Road"
+            android:textColor="@color/text_light_blue_color"
+            android:textSize="@dimen/menu_text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+            android:id="@+id/tvServiceCaseNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="AC1"
+            android:textColor="@color/text_light_blue_color"
+            android:textSize="@dimen/menu_text_size"
+            android:visibility="gone" />
+
+        <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+            android:id="@+id/tvServiceDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="Detail Here"
+            android:textColor="@color/gray_text_color"
+            android:textSize="@dimen/forgot_password_text" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/include_horizontal_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/ivEdit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/edit_icons" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/devider_color"
+                android:scrollbarAlwaysDrawHorizontalTrack="true" />
+
+            <ImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/delete_icon" />
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/include_horizontal_line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

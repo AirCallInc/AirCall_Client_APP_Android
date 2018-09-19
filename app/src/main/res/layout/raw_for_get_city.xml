@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+        android:id="@+id/tvListOfAllCity"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="State Here"
+        android:textColor="@color/black"
+        android:textSize="@dimen/forgot_password_text"/>
+
+    <ImageView
+        android:id="@+id/ivSelected"
+        android:src="@drawable/right_icon"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="@dimen/view_pager_height"
+    android:background="@drawable/pager_raw_bg"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/cicle_img"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="@color/text_light_blue_color"/>
+
+        <ImageView
+            android:id="@+id/ivStatus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/right_btn"/>
+
+    </FrameLayout>
+
+    <com.aircall.app.TextFonts.TextViewOpenSansSemiBoldFont
+        android:id="@+id/tvUnitName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="AC1"
+        android:textColor="@color/black"
+        android:textSize="28dp"/>
+
+    <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+        android:id="@+id/tvUnitStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Working"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/black"
+        android:textSize="24dp"/>
+
+
+</LinearLayout>

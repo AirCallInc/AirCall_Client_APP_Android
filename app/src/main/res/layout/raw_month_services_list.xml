@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/devider_color"/>
+    <LinearLayout
+        android:id="@+id/llRawHader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/upcoming_raw_header_back"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:minHeight="@dimen/raw_upcoming_layout_min_height"
+            android:orientation="horizontal">
+
+            <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                android:id="@+id/tvTimeSlot"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:text=""
+                android:textColor="@color/gray_text_color"
+                android:textSize="@dimen/menu_text_size"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/devider_color"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:minHeight="@dimen/raw_upcoming_layout_min_height"
+            android:orientation="horizontal">
+
+            <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                android:id="@+id/tvScheduleDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=""
+                android:textColor="@color/gray_text_color"
+                android:textSize="@dimen/menu_text_size"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/upcoming_raw_footer_back"
+        android:minHeight="@dimen/raw_upcoming_layout_min_height">
+
+        <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+            android:id="@+id/tvDiscription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="Service man will come for service"
+            android:textColor="@color/gray_text_color"
+            android:textSize="@dimen/raw_upcoming_discription_text_size"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/devider_color"/>
+
+</LinearLayout>

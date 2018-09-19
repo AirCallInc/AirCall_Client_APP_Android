@@ -1,0 +1,65 @@
+<LinearLayout
+    android:id="@+id/llMain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.aircall.app.Fragment.DashboardFragment">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/header_background"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <com.aircall.app.TextFonts.TextViewOpenSansSemiBoldFont
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/drawer_plan_coverage"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_header_text_size"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivNavDrawer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:padding="@dimen/back_arrow_padding"
+                android:src="@drawable/menu_icon"/>
+
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center">
+            <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                android:id="@+id/pvPlanComparison"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/plan_comparison"
+                android:textColor="@color/text_light_blue_color"
+                android:textSize="@dimen/header_text_size" />
+        </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvPlanCoverage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

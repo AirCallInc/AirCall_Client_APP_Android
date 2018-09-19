@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llAddress"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+
+        <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+            android:id="@+id/tvUnitName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="15dp"
+            android:text="AC1"
+            android:textColor="@color/caldroid_holo_blue_dark"
+            android:textSize="@dimen/signin_text"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:text="@string/my_unit_status"
+            android:textColor="@color/black"
+            android:textSize="@dimen/forgot_password_text"/>
+        <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+            android:id="@+id/tvStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.5"
+            android:text="V"
+            android:textColor="@color/black"
+            android:textSize="@dimen/forgot_password_text"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:text="@string/my_unit_plan"
+                android:textColor="@color/black"
+                android:textSize="@dimen/forgot_password_text"/>
+            <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                android:id="@+id/tvPlan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.5"
+                android:text="Residential Plan"
+                android:textColor="@color/black"
+                android:textSize="@dimen/forgot_password_text"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/footerView"
+        layout="@layout/include_horizontal_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

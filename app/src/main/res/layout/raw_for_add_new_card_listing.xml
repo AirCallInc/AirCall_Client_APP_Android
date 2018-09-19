@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/llAddress"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llRawClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/payment_method_name_on_card"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/forgot_password_text"/>
+                <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                    android:id="@+id/tvListCardHolderName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/forgot_password_text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/payment_method_card_no"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/forgot_password_text"/>
+                <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                    android:id="@+id/tvListCardNo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="@string/payment_method_card_no"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/forgot_password_text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/payment_method_expire_month"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/forgot_password_text"/>
+                <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                    android:id="@+id/tvListExpireMonth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="@string/payment_method_expire_month"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/forgot_password_text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/payment_method_expire_year"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/forgot_password_text"/>
+                <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                    android:id="@+id/tvListExpireYear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="@string/payment_method_expire_year"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/forgot_password_text"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivIsDefaultCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="10dp"
+            android:layout_weight="4"
+            android:src="@drawable/right_icon"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/footerView"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/devider_color"/>
+
+    <LinearLayout
+        android:id="@+id/llEdit"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivEdit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/edit_icons"/>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/include_horizontal_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

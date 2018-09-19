@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/text_light_blue_color"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_launcher" />
+
+        <com.aircall.app.TextFonts.TextViewOpenSansBoldFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_header_text_size" />
+
+    </LinearLayout>
+
+    <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+        android:id="@+id/txtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/header_text_size" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout_yes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                android:id="@+id/txt_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Agree"
+                android:textColor="@color/text_light_blue_color"
+                android:textSize="@dimen/header_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.5"
+            android:background="@color/white"
+            android:gravity="center"
+            android:weightSum="2">
+
+            <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                android:id="@+id/txt_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Do not agree"
+                android:textColor="@color/text_light_blue_color"
+                android:textSize="@dimen/header_text_size" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

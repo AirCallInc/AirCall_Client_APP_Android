@@ -1,0 +1,346 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.aircall.app.Fragment.DashboardFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/header">
+
+        <ImageView
+            android:id="@+id/ivNavDrawer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:padding="@dimen/back_arrow_padding"
+            android:src="@drawable/menu_icon" />
+
+        <com.aircall.app.TextFonts.TextViewOpenSansBoldFont
+            android:id="@+id/tvHeaderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/Request_for_service_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_header_text_size" />
+
+        <ImageView
+            android:id="@+id/ivRequestList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:src="@drawable/resedual_list_white" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp">
+
+                <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                    android:id="@+id/txtAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/address_text"
+                    android:textColor="@color/text_light_blue_color"
+                    android:textSize="@dimen/header_text_size" />
+
+                <ImageView
+                    android:id="@+id/ivAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/home_icon" />
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvAddressList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <com.aircall.app.TextFonts.TextViewOpenSansSemiBoldItalicFont
+                android:id="@+id/txtAddressNoData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textColor="@color/gray_text_color"
+                android:textSize="@dimen/header_text_size"
+                android:visibility="gone" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/devider_color" />
+
+            <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Select plan type"
+                android:textColor="@color/text_light_blue_color"
+                android:textSize="@dimen/header_text_size" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvSelectPlanType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <com.aircall.app.TextFonts.TextViewOpenSansSemiBoldItalicFont
+                android:id="@+id/txtPlanTypeNoData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textColor="@color/gray_text_color"
+                android:textSize="@dimen/header_text_size"
+                android:visibility="gone" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/devider_color" />
+
+            <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/select_unit"
+                android:textColor="@color/text_light_blue_color"
+                android:textSize="@dimen/header_text_size" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvSelectUnit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <com.aircall.app.TextFonts.TextViewOpenSansSemiBoldItalicFont
+                android:id="@+id/txtUnitNoData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textColor="@color/gray_text_color"
+                android:textSize="@dimen/header_text_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/devider_color" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvSelectReason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/devider_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp">
+
+                <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="9/11/2015"
+                    android:textColor="@color/text_light_blue_color"
+                    android:textSize="@dimen/header_text_size" />
+
+                <ImageView
+                    android:id="@+id/ivSelectDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_weight="4"
+                    android:gravity="end"
+                    android:src="@drawable/calender" />
+            </RelativeLayout>
+
+            <!--<LinearLayout
+                android:id="@+id/ll_select_Emergencytime"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content">
+                <com.aircall.www.TextFonts.TextViewOpenSansRagularFont
+                    android:id="@+id/tvEmergencyTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Select Time"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/activity_horizontal_margin"/>
+
+            </LinearLayout>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/devider_color" />
+
+            <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/select_time"
+                android:textColor="@color/text_light_blue_color"
+                android:textSize="@dimen/header_text_size" />
+
+            <LinearLayout
+                android:id="@+id/ll_timeslots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                    android:id="@+id/tvTimeFirst"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="8AM - 12PM"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/activity_horizontal_margin" />
+
+                <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                    android:id="@+id/tvTimeSecond"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/upcoming_raw_footer_back"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="1PM - 5PM"
+                    android:textColor="@color/gray_text_color"
+                    android:textSize="@dimen/activity_horizontal_margin" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/devider_color" />
+
+
+            <EditText
+                android:id="@+id/etAddNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_border_background"
+                android:gravity="top"
+                android:hint="@string/add_note_hint"
+                android:minLines="5"
+                android:padding="10dp"
+                android:textColor="@color/edit_text_border_text"
+                android:textColorHint="@color/edit_text_border_text" />
+
+
+            <com.aircall.app.TextFonts.TextViewOpenSansRagularFont
+                android:id="@+id/tvSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:layout_marginTop="40dp"
+                android:background="@color/text_light_blue_color"
+                android:gravity="center"
+                android:inputType="textCapSentences"
+                android:paddingBottom="@dimen/header_padding_bottom"
+                android:paddingTop="@dimen/header_padding_top"
+                android:text="@string/submit_request"
+                android:textColor="@color/white"
+                android:textSize="@dimen/header_text_size" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

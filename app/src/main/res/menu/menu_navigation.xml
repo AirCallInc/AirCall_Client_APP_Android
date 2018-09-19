@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboard"
+            android:title="Dashboard"/>
+        <!--android:icon="@drawable/ic_home"-->
+        <item
+            android:id="@+id/upcomingScheduel"
+            android:title="Upcoming Schedule"/>
+        <item
+            android:id="@+id/unSubmittedUnits"
+            android:title="UnSubmitted Units"/>
+        <item
+            android:id="@+id/pastServices"
+            android:title="Past Services"/>
+        <item
+            android:id="@+id/myUnits"
+            android:title="My Units"/>
+        <item
+            android:id="@+id/requestForService"
+            android:title="Request For Service"/>
+        <item
+            android:id="@+id/planCoverage"
+            android:title="Plan Coverage"/>
+        <item
+            android:id="@+id/termConditions"
+            android:title="Term &amp; Conditions"/>
+        <item
+            android:id="@+id/aboutUs"
+            android:title="About Us"/>
+        <item
+            android:id="@+id/contactUs"
+            android:title="Contact Us"/>
+        <item
+            android:id="@+id/logout"
+            android:title="Logout"/>
+    </group>
+
+</menu>

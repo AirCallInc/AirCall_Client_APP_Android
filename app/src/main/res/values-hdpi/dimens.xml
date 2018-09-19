@@ -1,0 +1,70 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="header_height">60dp</dimen>
+    <dimen name="header_content_height">45dp</dimen>
+    <dimen name="common_header_text_size">22dp</dimen>
+
+
+    <!--Common Margin -->
+    <dimen name="margin_top">15dp</dimen>
+    <dimen name="margin_bottom">15dp</dimen>
+    <dimen name="margin_left">20dp</dimen>
+    <dimen name="margin_right">20dp</dimen>
+
+    <!--Common Pading-->
+    <dimen name="padding_top">15dp</dimen>
+    <dimen name="padding_bottom">15dp</dimen>
+    <dimen name="padding_left">20dp</dimen>
+    <dimen name="padding_right">20dp</dimen>
+
+    <!--For Header-->
+    <dimen name="header_padding_top">10dp</dimen>
+    <dimen name="header_padding_bottom">10dp</dimen>
+    <dimen name="header_padding_left">10dp</dimen>
+    <dimen name="header_padding_right">10dp</dimen>
+
+    <!--SignIn Fragment-->
+    <dimen name="signin_text">18dp</dimen>
+    <dimen name="forgot_password_text">16dp</dimen>
+
+
+    <!--Dashboard screen-->
+    <dimen name="header_text_size">20dp</dimen>
+    <dimen name="user_name_text">18dp</dimen>
+    <dimen name="notification_count_text">18dp</dimen>
+    <dimen name="view_pager_height">300dp</dimen>
+    <dimen name="notification_image_height">45dp</dimen>
+
+    <!--Drawer-->
+    <dimen name="menu_text_size">18dp</dimen>
+    <dimen name="nav_client_name_text_size">25dp</dimen>
+
+
+    <!--Upcoming Schedual Fragment-->
+    <dimen name="raw_upcoming_layout_min_height">40dp</dimen>
+    <dimen name="raw_upcoming_day_text_size">42dp</dimen>
+    <dimen name="raw_upcoming_discription_text_size">16dp</dimen>
+    <dimen name="raw_upcoming_text_mnth_min_height">22dp</dimen>
+    <dimen name="raw_upcoming_text_timeslot_size">20dp</dimen>
+    <dimen name="raw_upcoming_text_your_next_visit_size">23dp</dimen>
+    <dimen name="upcoming_list_devider_height">10dp</dimen>
+
+    <!--Request for services frgment-->
+    <dimen name="request_for_services_heder_text_size">25dp</dimen>
+    <dimen name="text_heading_size_request_for_services">22dp</dimen>
+    <dimen name="select_unit_height">80dp</dimen>
+    <dimen name="raw_select_reason_text_size">22dp</dimen>
+
+    <!--Quentity Dialog-->
+    <dimen name="dialog_width">300dp</dimen>
+
+    <!--Receipt-->
+    <dimen name="receipt_amount">30dp</dimen>
+
+
+    <!--Billing Address-->
+    <dimen name="adress_min_height">120dp</dimen>
+
+</resources>

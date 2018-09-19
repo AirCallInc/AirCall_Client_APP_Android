@@ -1,0 +1,4 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:drawable="@drawable/shape_below"/>-->
+    <item android:top="3dp" android:right="3dp" android:bottom="3dp" android:left="3dp" android:drawable="@drawable/blue_circle"/>
+</layer-list>

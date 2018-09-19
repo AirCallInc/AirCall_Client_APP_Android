@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "237592308869",
+    "firebase_url": "https://aircall-12080.firebaseio.com",
+    "project_id": "aircall-12080",
+    "storage_bucket": "aircall-12080.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237592308869:android:8f2db5734895c393",
+        "android_client_info": {
+          "package_name": "com.aircall.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "237592308869-l45vkedrr41ok050acdp1ijrcbaq0h24.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aircall.app",
+            "certificate_hash": "043d0ea5ac77ba9936e2631eb697cf520e769ae8"
+          }
+        },
+        {
+          "client_id": "237592308869-vmo1f83h89in6sgfje4uahsahqbacgvg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSHouw2zr4MsMkExrQPJ7KMOKD2Lz_Xvc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "237592308869-vmo1f83h89in6sgfje4uahsahqbacgvg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

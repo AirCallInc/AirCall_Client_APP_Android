@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#083270</color>
+    <color name="colorPrimaryDark">#083270</color>
+    <color name="colorAccent">#083270</color>
+    <color name="header">#204D86</color>
+
+    <color name="black">#000000</color>
+    <color name="green">#5EBE2E</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transperent">#00FFFFFF</color>
+    <color name="header_background">#164F86</color>
+    <color name="text_light_blue_color">#08C3D4</color>
+    <color name="progress_dialog_bg">#08C3D4</color>
+    <color name="edit_text_border_text">#1A1A1A</color>
+    <color name="edit_text_border_color">#919191</color>
+    <color name="devider_color">#AEAEAE</color>
+
+    <!--Login-Signup screens-->
+    <color name="HVAC_devider_color">#CCCCCC</color>
+
+    <!--Dashboard screen Fragment-->
+    <color name="notification_count_text">#FF0000</color>
+    <color name="date_background">#F2F5F9</color>
+
+    <!--Upcoming shedual screen Fragment-->
+    <color name="gray_text_color">#515151</color>
+    <color name="upcoming_raw_header_back">#F3F5FB</color>
+    <color name="upcoming_raw_footer_back">#EAEEF5</color>
+
+    <!--Add Unit screen-->
+    <color name="plan_detail_background">#E9EEF4</color>
+    <color name="plan_detail_subject_text">#535353</color>
+    <color name="tab_normal_background">#EDEDED</color>
+
+    <!--Summary-->
+    <color name="summary_add_another_unit">#818797</color>
+    <color name="default_address_color">#d5d5d5</color>
+    <color name="address_title_back_color">#E8EBF2</color>
+
+
+    <!--Color from calander-->
+    <color name="caldroid_darker_gray">#aaa</color>
+    <color name="caldroid_holo_blue_dark">#ff0099cc</color>
+
+</resources>
